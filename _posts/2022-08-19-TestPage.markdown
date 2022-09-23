@@ -1,0 +1,14 @@
+---
+layout: post
+title: yeahn-sample
+date: 2022-09-23 15:40:00 +0900
+category: yeahn
+---
+# 영은-샘플
+> 안뇽
+
+This is code
+```ruby
+print 'hello world'
+```
+![test](/images/screenshot-1.png)
