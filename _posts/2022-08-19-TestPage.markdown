@@ -11,4 +11,4 @@ This is code
 ```ruby
 print 'hello world'
 ```
-![Image Alt 텍스트]("/assets/img/screenshot-1.png")
+![Image Alt 텍스트]("../assets/img/screenshot-1.png")
