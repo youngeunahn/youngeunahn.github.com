@@ -22,7 +22,7 @@ title: YEAHN
 email: yeahn1107@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   심심할때 쓰는 블로그
-baseurl: "yeahn" # the subpath of your site, e.g. /blog
+#baseurl: "yeahn" # the subpath of your site, e.g. /blog
 url: "https://youngeunahn.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
 github_username: yeahn
 highlighter: rouge
