@@ -1,8 +1,16 @@
 ---
-layout: post
 title: 스프링부트 레거시 프로젝트 1 - 환경세팅하기
-date: 2022-09-23 15:40:00 +0900
+date: 2019-06-28 5:52:21 -0500
 categories: 스프링부트_레거시프로젝트
+badges:
+- type: primary
+  tag: primary-badge
+- type: secondary
+  tag: secondary-badge
+- type: info
+  tag: info-badge
+- type: success
+  tag: success-badge
 ---
 스프링부트 레거시 프로젝트를 만들기 위해서도 https://start.spring.io/ 를 사용할것이다.
 레거시 프로젝트이기 때문에 다음과 같은 설정을 적용할 것이다.
