@@ -44,7 +44,7 @@ For example, on an HPC site I'd want a tag like "mpi" to do a search on
 [http://ask.cyberinfrastructure.org](http://ask.cyberinfrastructure.org) for mpi.
 See the [tags](#tags) section below for how to configure this.
 
-### Documentation
+### 프로젝트
 
 Documentation pages should be written in the `docs` folder of the repository,
 and you are allowed to use whatever level of nesting (subfolders) that 
@@ -120,7 +120,7 @@ want to link to docs, the url is the path starting with the docs folder.
 Here is an example (currently the active example):
 
 ```yaml
-- title: Documentation
+- title: 프로젝트
   url: docs
   links:
     - title: "Getting Started"

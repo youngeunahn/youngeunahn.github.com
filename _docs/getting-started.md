@@ -120,7 +120,7 @@ want to link to docs, the url is the path starting with the docs folder.
 Here is an example (currently the active example):
 
 ```yaml
-- title: Documentation
+- title: 프로젝
   url: docs
   links:
     - title: "Getting Started"
