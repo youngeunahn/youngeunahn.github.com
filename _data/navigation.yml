@@ -1,4 +1,4 @@
-- title: About
-  url: about
-- title: 프로젝트
-  url: docs
+- title: 깃허브
+  external_url: https://github.com/yeahn330?tab=repositories
+- title: 티스토리
+  external_url : https://eongeuni.tistory.com/

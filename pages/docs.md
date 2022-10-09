@@ -1,13 +1,9 @@
 ---
 layout: page
-title: 프로젝트
-permalink: /docs/
+permalink: /legacy/
 ---
 
-# 프로젝트
-
-Welcome to the {{ site.title }} Documentation pages! Here you can quickly jump to a 
-particular page.
+# 레거시 프로젝트
 
 <div class="section-index">
     <hr class="panel-line">

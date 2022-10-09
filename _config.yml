@@ -18,7 +18,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: YEAHN
+title: YEAHN_심심할때 쓰는 블로그
 email: yeahn1107@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   심심할때 쓰는 블로그
@@ -82,7 +82,7 @@ collections:
 # Defaults
 defaults:
   - scope:
-      path: "_docs"
+      path: "_docs/_legacy"
       type: "docs"
     values:
       layout: page
