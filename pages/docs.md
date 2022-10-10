@@ -1,9 +1,9 @@
 ---
 layout: page
-permalink: /legacy/
+permalink: /docs/
 ---
 
-# 레거시 프로젝트
+# docs
 
 <div class="section-index">
     <hr class="panel-line">

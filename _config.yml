@@ -26,8 +26,6 @@ description: >- # this means to ignore newlines until "baseurl:"
 #url: "https://youngeunahn.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
 github_username: yeahn
 highlighter: rouge
-svg:
-  optimize: true
 # Build settings
 # theme: minima
 highlighter-theme: monokai
@@ -36,11 +34,6 @@ plugins:
   - jekyll-feed
 category_dir: category/
 tag_dir: tag/
-
-# Optional
-twitter: vsoch
-linkedin: vsochat
-dockerhub: vanessa
 
 # Should there be feedback buttons at the bottom of pages?
 feedback: false
@@ -75,17 +68,23 @@ exclude: [_site, CHANGELOG.md, LICENSE, README.md, vendor]
 
 # Collections
 collections:
-  docs:
+  legacy:
     output: true
     permalink: /:collection/:path
 
 # Defaults
 defaults:
   - scope:
-      path: "_docs/_legacy"
+      path: "_legacy"
+      type: "legacy"
+    values:
+      layout: "legacy"
+  -
+    scope:
+      path: "_docs"
       type: "docs"
     values:
-      layout: page
+      layout: "page"
   -
     scope:
       path: ""
