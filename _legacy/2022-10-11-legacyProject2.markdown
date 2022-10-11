@@ -15,17 +15,18 @@ badges:
 ![legacy2](/assets/img/legacy2.png)
 
 크게 2가지(클래스, 리소스)폴더로 나눠서 정리한다. 
-> ### java(클래스) 폴더 / com.yeahn 패키지
-> #### 1. common : 공통적으로 범용적으로 사용할 클래스를 모아놓는다
-> #### 2. config : 설정에 관련된 클래스를 모아놓는다.
-> #### 3. dao : mybatis 매퍼클래스들을 모아놓는다.
-> #### 4. model : dto, vo의 기능을 하는 모델을 모아놓는다.
-> #### 5. web : controller, service클래스를 모아놓는다.
 
-> ### resources(리소스) 폴더
-> #### 1. query : 쿼리xml을 모아놓는다.
-> #### 2. static : css, js, imges 등을 모아놓는다.
-> #### 3. templates : 마크업에 관련된 mustache 파일들을 모아놓는다.
+> #### java(클래스) 폴더 / com.yeahn 패키지
+> ##### 1. common : 공통적으로 범용적으로 사용할 클래스를 모아놓는다
+> ##### 2. config : 설정에 관련된 클래스를 모아놓는다.
+> ##### 3. dao : mybatis 매퍼클래스들을 모아놓는다.
+> ##### 4. model : dto, vo의 기능을 하는 모델을 모아놓는다.
+> ##### 5. web : controller, service클래스를 모아놓는다.
+
+> #### resources(리소스) 폴더
+> ##### 1. query : 쿼리xml을 모아놓는다.
+> ##### 2. static : css, js, imges 등을 모아놓는다.
+> ##### 3. templates : 마크업에 관련된 mustache 파일들을 모아놓는다.
 
 이 상태에서 
 1. templates폴더에 index.mustache파일을 추가
