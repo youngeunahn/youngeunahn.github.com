@@ -32,6 +32,7 @@ badges:
 1. templates폴더에 index.mustache파일을 추가
 2. web패키지에 controller 패키지 추가하고 Main클래스를 추가한다.
 3. 그리고 다음과 같이 컨트롤러 소스를 추가하여 index.mustache파일을 바라보도록 한다.
+
 ```java
 package com.yeahn.web.controller;
 
