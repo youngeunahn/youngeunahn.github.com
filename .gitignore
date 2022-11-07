@@ -3,7 +3,4 @@ _site
 .jekyll-cache
 .jekyll-metadata
 vendor
-githubblog.iml
-misc.xml
-modules.xml
-vcs.xml
+.idea
