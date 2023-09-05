@@ -68,6 +68,9 @@ exclude: [_site, CHANGELOG.md, LICENSE, README.md, vendor]
 
 # Collections
 collections:
+  house:
+    output: true
+    permalink: /:collection/:path
   legacy:
     output: true
     permalink: /:collection/:path
@@ -78,10 +81,15 @@ collections:
 # Defaults
 defaults:
   - scope:
+      path: "_house"
+      type: "house"
+    values:
+      layout: "house"
+  - scope:
       path: "_gitblog"
       type: "gitblog"
     values:
-        layout: "gitblog"
+      layout: "gitblog"
   - scope:
       path: "_legacy"
       type: "legacy"
