@@ -71,6 +71,9 @@ collections:
   legacy:
     output: true
     permalink: /:collection/:path
+  gitblog:
+    output: true
+    permalink: /:collection/:path
 
 # Defaults
 defaults:
