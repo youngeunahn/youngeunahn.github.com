@@ -3,3 +3,8 @@
   links:
     - title: "프로젝트 세팅"
       url: "legacy"
+- title: 깃블로그 운영
+  url: gitblog
+  links:
+    - title: "로컬 세팅"
+      url: "gitblog"
