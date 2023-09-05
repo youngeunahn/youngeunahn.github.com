@@ -1,0 +1,16 @@
+---
+layout: gitblog
+title: 깃블로그 로컬세팅
+date: 2022-10-14 11:30:00 +0900
+categories: 깃블로그
+badges:
+- type: primary
+  tag: 깃헙블로그
+- type: primary
+  tag: jekyll
+---
+다음과 같은 방법으로 jekyll 로컬세팅을 할 수 있다.
+1. ruby 설치
+2. jekyll 테마 다운로드
+3. bundler설치
+4. jekyll 로컬서버 실행
