@@ -80,7 +80,7 @@ defaults:
   - scope:
       path: "_gitblog"
       type: "gitblog"
-      values:
+    values:
         layout: "gitblog"
   - scope:
       path: "_legacy"
