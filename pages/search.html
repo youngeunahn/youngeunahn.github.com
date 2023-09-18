@@ -3,15 +3,18 @@ title: Search
 sitemap: false
 permalink: /search/
 not_editable: true
+tipue_search_active: true
+exclude_from_search: true
 excluded_in_search: true
 ---
 
-<input class="form-control td-search-input" type="search" name="q" id="search-input" placeholder="&#xf002 Search this site…"  style="margin-top:5px" autofocus>
-<i style="color:white; margin-right:8px; margin-left:5px" class="fa fa-search"></i>
+<form action="{{ page.url | relative_url }}">
+    <div class="tipue_search_left"><img src="{{ "/assets/tipuesearch/search.png" | relative_url }}" class="tipue_search_icon"></div>
+    <div class="tipue_search_right"><input type="text" name="q" id="tipue_search_input" pattern=".{1,}" title="At least 1 characters" required></div>
+    <div style="clear: both;"></div>
+</form>
 
-<p><span id="search-process">Loading</span> results <span id="search-query-container" style="display: none;">for "<strong id="search-query"></strong>"</span></p>
-
-<ul id="search-results"></ul>
+<div id="tipue_search_content"></div>
 
 {% capture version_prefix %}/docs/{{ site.version_params.version_dir }}/{% endcapture %}
 <script>
@@ -65,3 +68,26 @@ excluded_in_search: true
 </script>
 <script src="{{ site.baseurl }}/assets/js/lunr.min.js"></script>
 <script src="{{ site.baseurl }}/assets/js/search.js"></script>
+
+<script type="text/javascript">
+    SimpleJekyllSearch({
+        searchInput: document.getElementById('search-input'),
+        resultsContainer: document.getElementById('results-container'),
+        json: '/search.json',
+        searchResultTemplate: '<li><a href="{url}" title="{desc}" target="_blank">{title}</a></li>',
+        noResultsText: '검색결과가 존재하지 않습니다.',
+        limit: 10000,
+        fuzzy: false,
+        exclude: ['Welcome']
+    });
+</script>
+
+<script>
+    $(document).ready(function() {
+        $('#tipue_search_input').tipuesearch({
+            'wholeWords' : false,
+            'showTime' : false,
+            'minimumLength' : 1
+        });
+    });
+</script>
