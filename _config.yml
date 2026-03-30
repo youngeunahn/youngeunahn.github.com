@@ -90,21 +90,18 @@ defaults:
       type: "posts"
     values:
       categories: "부동산"
-    values:
       layout: "house"
   - scope:
       path: ""
       type: "posts"
     values:
       categories: "스프링부트_레거시프로젝트"
-    values:
       layout: "legacy"
   - scope:
       path: ""
       type: "posts"
     values:
       categories: "깃블로그운영"
-    values:
       layout: "gitblog"
   -
     scope:

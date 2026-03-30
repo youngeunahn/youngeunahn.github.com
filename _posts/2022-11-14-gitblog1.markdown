@@ -2,7 +2,7 @@
 layout: gitblog
 title: 깃블로그 로컬세팅
 date: 2022-10-14 11:30:00 +0900
-categories: 깃블로그
+categories: 깃블로그운영
 badges:
 - type: primary
   tag: 깃헙블로그
