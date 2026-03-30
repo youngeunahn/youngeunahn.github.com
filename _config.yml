@@ -85,24 +85,6 @@ defaults:
       type: "posts"
     values:
       layout: "post"
-  - scope:
-      path: ""
-      type: "posts"
-    values:
-      categories: "부동산"
-      layout: "house"
-  - scope:
-      path: ""
-      type: "posts"
-    values:
-      categories: "스프링부트_레거시프로젝트"
-      layout: "legacy"
-  - scope:
-      path: ""
-      type: "posts"
-    values:
-      categories: "깃블로그운영"
-      layout: "gitblog"
   -
     scope:
       path: "_docs"
@@ -115,6 +97,7 @@ defaults:
       type: "pages"
     values:
       layout: TD-navigation.html
+
 
 # Exclude from processing.
 # The following items will not be processed, by default.
