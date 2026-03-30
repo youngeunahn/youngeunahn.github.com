@@ -66,17 +66,17 @@ exclude: [_site, CHANGELOG.md, LICENSE, README.md, vendor]
 
 
 
-# Collections
-collections:
-  house:
-    output: true
-    permalink: /:collection/:path
-  legacy:
-    output: true
-    permalink: /:collection/:path
-  gitblog:
-    output: true
-    permalink: /:collection/:path
+# Collections (제거됨: _posts에서 통합 관리)
+# collections:
+#   house:
+#     output: true
+#     permalink: /:collection/:path
+#   legacy:
+#     output: true
+#     permalink: /:collection/:path
+#   gitblog:
+#     output: true
+#     permalink: /:collection/:path
 
 # Defaults
 defaults:
