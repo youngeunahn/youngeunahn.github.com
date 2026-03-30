@@ -81,20 +81,31 @@ collections:
 # Defaults
 defaults:
   - scope:
-      path: "_house"
-      type: "house"
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      categories: "부동산"
     values:
       layout: "house"
   - scope:
-      path: "_gitblog"
-      type: "gitblog"
+      path: ""
+      type: "posts"
     values:
-      layout: "gitblog"
-  - scope:
-      path: "_legacy"
-      type: "legacy"
+      categories: "스프링부트_레거시프로젝트"
     values:
       layout: "legacy"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      categories: "깃블로그운영"
+    values:
+      layout: "gitblog"
   -
     scope:
       path: "_docs"
@@ -106,13 +117,8 @@ defaults:
       path: ""
       type: "pages"
     values:
-      layout: "page"
-  -
-    scope:
-      path: "posts"
-      type: "posts"
-    values:
-      layout: "post"
+      layout: TD-navigation.html
+
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to

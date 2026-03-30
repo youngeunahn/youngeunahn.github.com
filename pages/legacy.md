@@ -7,9 +7,9 @@ permalink: /legacy/
 
 <div class="section-index">
     <hr class="panel-line">
-    {% for legacy in site.legacy  %}        
+    {% for post in site.categories['스프링부트_레거시프로젝트']  %}        
     <div class="entry">
-    <h5><a href="{{ legacy.url | prepend: site.baseurl }}">{{ legacy.title }}</a></h5>
-    <p>{{ legacy.description }}</p>
+    <h5><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h5>
+    <p>{{ post.description }}</p>
     </div>{% endfor %}
 </div>

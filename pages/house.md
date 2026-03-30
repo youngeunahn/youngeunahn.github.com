@@ -7,9 +7,9 @@ permalink: /house/
 
 <div class="section-index">
     <hr class="panel-line">
-    {% for house in site.house  %}        
+    {% for post in site.categories['부동산']  %}        
     <div class="entry">
-    <h5><a href="{{ house.url | prepend: site.baseurl }}">{{ house.title }}</a></h5>
-    <p>{{ house.description }}</p>
+    <h5><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h5>
+    <p>{{ post.description }}</p>
     </div>{% endfor %}
 </div>

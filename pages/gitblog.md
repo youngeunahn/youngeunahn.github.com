@@ -7,9 +7,9 @@ permalink: /gitblog/
 
 <div class="section-index">
     <hr class="panel-line">
-    {% for gitblog in site.gitblog  %}        
+    {% for post in site.categories['깃블로그운영']  %}        
     <div class="entry">
-    <h5><a href="{{ gitblog.url | prepend: site.baseurl }}">{{ gitblog.title }}</a></h5>
-    <p>{{ gitblog.description }}</p>
+    <h5><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h5>
+    <p>{{ post.description }}</p>
     </div>{% endfor %}
 </div>
