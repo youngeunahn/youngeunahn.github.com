@@ -13,3 +13,8 @@
   links:
     - title: "로컬 세팅"
       url: "gitblog"
+- title: AI 에이전트 활용
+  url: ai-agent
+  links:
+    - title: "Gemini CLI 활용법"
+      url: "ai-agent"
