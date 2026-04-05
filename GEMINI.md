@@ -60,4 +60,6 @@ categories: 부동산
 
 ### 3. 파일 명명 및 이미지 규칙
 - 포스트 파일명: `YYYY-MM-DD-제목.markdown` 형식을 따릅니다.
-- 이미지 경로: `assets/img/` 폴더 내에 저장하며, 포스트에서 `/assets/img/파일명.png` 형태로 참조합니다.
+- 이미지 경로: `assets/img/posts/{포스트파일명}/` 폴더 내에 저장하는 것을 권장합니다.
+  - 예: `_posts/2026-04-04-test.markdown` 작성 시 이미지는 `assets/img/posts/2026-04-04-test/image1.png`에 저장.
+  - 포스트에서 참조 시: `![설명](/assets/img/posts/2026-04-04-test/image1.png)` 형태.

@@ -1,6 +1,6 @@
 ---
 layout: docs
-title: ai 코딩 에이전트 툴 입문 / gemini cli 무료, 윈도우 사용자
+title: "AI 코딩 에이전트 툴 입문 : gemini cli 무료, 윈도우 사용자"
 date: 2026-04-04 10:30:00 +0900
 categories: AI 에이전트 활용
 badges:

@@ -1,6 +1,6 @@
 ---
 layout: docs
-title: "AI 코딩 에이전트 툴 입문: 레벨별 개발 워크플로우 3가지"
+title: "AI 코딩 에이전트 툴 입문 : 레벨별 개발 워크플로우 3가지"
 date: 2026-04-04 11:00:00 +0900
 categories: AI 에이전트 활용
 badges:
