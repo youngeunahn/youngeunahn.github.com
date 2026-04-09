@@ -2,7 +2,7 @@
 layout: docs
 title: "AI 코딩 에이전트 툴 입문 : @ 기호로 요청 전달하기"
 date: 2026-04-09 10:00:00 +0900
-categories: AI 에이전트 활용
+categories: ["AI 에이전트 활용"]
 badges:
 - type: info
   tag: AI Agent

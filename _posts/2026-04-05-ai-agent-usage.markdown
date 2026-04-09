@@ -2,7 +2,7 @@
 layout: docs
 title: "AI 코딩 에이전트 툴 입문: 토큰 그리고 비용 계산"
 date: 2026-04-05 09:00:00 +0900
-categories: AI 에이전트 활용
+categories: ["AI 에이전트 활용"]
 badges:
 - type: primary
   tag: AI Agent

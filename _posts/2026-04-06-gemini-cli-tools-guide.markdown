@@ -2,7 +2,7 @@
 layout: docs
 title: "AI 코딩 에이전트 툴 입문 : Gemini CLI의 '도구(Tools)'"
 date: 2026-04-06 14:00:00 +0900
-categories: AI 에이전트 활용
+categories: ["AI 에이전트 활용"]
 badges:
 - type: success
   tag: AI Agent
