@@ -3,7 +3,7 @@ layout: ai-agent
 permalink: /ai-agent/
 ---
 
-# AI 에이전트 활용
+# Gemini CLI 활용법
 
 <div class="section-index">
     <hr class="panel-line">
