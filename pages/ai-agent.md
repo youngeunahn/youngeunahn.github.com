@@ -1,5 +1,6 @@
 ---
 layout: ai-agent
+title: AI 에이전트 활용
 permalink: /ai-agent/
 ---
 
