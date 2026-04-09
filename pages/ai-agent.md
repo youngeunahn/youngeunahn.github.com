@@ -7,7 +7,8 @@ permalink: /ai-agent/
 
 <div class="section-index">
     <hr class="panel-line">
-    {% for post in site.categories['AI 에이전트 활용']  %}        
+    {% assign filtered_posts = site.posts | where_exp: "item", "item.categories contains 'AI 에이전트 활용'" %}
+    {% for post in filtered_posts  %}        
     <div class="entry">
     <h5><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h5>
     <p>{{ post.description }}</p>
