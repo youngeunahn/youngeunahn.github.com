@@ -28,6 +28,67 @@ badges:
   font-weight: 700;
 }
 
+.td-content .jdk-upgrade-post .subsection-details {
+  margin: 1.35rem 0;
+  border: 1px solid #cfd8e3;
+  border-radius: 6px;
+  background: #fff;
+  box-shadow: 0 1px 2px rgba(16, 24, 40, 0.04);
+  overflow: hidden;
+}
+
+.td-content .jdk-upgrade-post .subsection-details[open] {
+  padding-bottom: 0.9rem;
+}
+
+.td-content .jdk-upgrade-post .subsection-details summary {
+  padding: 0.9rem 1rem;
+  background: #f3f7fa;
+  color: #17212b;
+  font-weight: 700;
+  cursor: pointer;
+  list-style-position: inside;
+}
+
+.td-content .jdk-upgrade-post .subsection-details summary:hover {
+  background: #edf3f8;
+}
+
+.td-content .jdk-upgrade-post .subsection-details > *:not(summary) {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.td-content .jdk-upgrade-post .topic-details {
+  margin: 1rem;
+  border: 1px solid #d8dee4;
+  border-radius: 5px;
+  background: #fff;
+  overflow: hidden;
+}
+
+.td-content .jdk-upgrade-post .topic-details[open] {
+  padding-bottom: 0.8rem;
+}
+
+.td-content .jdk-upgrade-post .topic-details summary {
+  padding: 0.75rem 0.9rem;
+  background: #fbfcfd;
+  color: #243447;
+  font-weight: 700;
+  cursor: pointer;
+  list-style-position: inside;
+}
+
+.td-content .jdk-upgrade-post .topic-details summary:hover {
+  background: #f3f7fa;
+}
+
+.td-content .jdk-upgrade-post .topic-details > *:not(summary) {
+  margin-left: 0.9rem;
+  margin-right: 0.9rem;
+}
+
 .td-content .jdk-upgrade-post h3 {
   margin-top: 2.2rem;
   color: #243447;
@@ -232,7 +293,8 @@ MyBatis는 확인해보니 큰 변경이 없어 기존에 사용하던 쿼리가
 <a id="jdk21-changes"></a>
 ## 2. JDK 21 주요 변경점
 
-### 2-1) 가상 스레드 (Virtual Threads)의 등장
+<details class="subsection-details" markdown="1">
+<summary>2-1) 가상 스레드 (Virtual Threads)의 등장</summary>
 
 가장 큰 업데이트 기능은 가상 스레드(Project Loom)이다.
 이 기능 하나만으로도 JDK21로 넘어갈 이유가 충분하다고 보는 이가 있을 정도이다.
@@ -281,7 +343,10 @@ public class VirtualThreadExample {
 }
 ```
 
-### 2-2) 시퀀스 컬렉션 (Sequenced Collections)
+</details>
+
+<details class="subsection-details" markdown="1">
+<summary>2-2) 시퀀스 컬렉션 (Sequenced Collections)</summary>
 
 #### 2-2-1) 시퀀스 컬렉션 설명
 자바의 컬렉션은 강력하지만 '순서가 있는 데이터'를 다룰 때 일관성이 부족했다.
@@ -343,7 +408,10 @@ public class SequencedCollectionExample {
 */
 ```
 
-### 2-3) 레코드 패턴 (Record Patterns)
+</details>
+
+<details class="subsection-details" markdown="1">
+<summary>2-3) 레코드 패턴 (Record Patterns)</summary>
 
 record는 JDK 14에서 도입되었다. 불변 데이터 객체를 만드는 데 유용하다.
 JDK 21에서는 이 record를 강력하게 사용할 수 있도록 레코드 패턴이 정식 기능으로 추가됐다.
@@ -400,7 +468,10 @@ Color: Red, Position: 10,20
 */
 ```
 
-### 2-4) Switch 패턴 매칭 (Pattern Matching for Switch)
+</details>
+
+<details class="subsection-details" markdown="1">
+<summary>2-4) Switch 패턴 매칭 (Pattern Matching for Switch)</summary>
 
 #### 2-4-1) Switch 패턴 설명
 
@@ -446,7 +517,10 @@ public class SwitchPatternExample {
 */
 ```
 
-### 2-5) 세대별 ZGC (Generational ZGC, JEP 439)
+</details>
+
+<details class="subsection-details" markdown="1">
+<summary>2-5) 세대별 ZGC (Generational ZGC, JEP 439)</summary>
 
 #### 2-5-1) ZGC 설명
 
@@ -462,6 +536,8 @@ VM 옵션으로 아래 값을 추가하여 활성화할 수 있음.
 ```text
 -XX:+UseZGC -XX:+ZGenerational
 ```
+
+</details>
 
 ---
 
@@ -486,7 +562,9 @@ VM 옵션으로 아래 값을 추가하여 활성화할 수 있음.
 
 ### 4-1) Spring Boot 3.0
 
-#### 4-1-1) Spring MVC의 trailing slash 매칭 변경  
+<details class="topic-details" markdown="1">
+<summary>4-1-1) Spring MVC의 trailing slash 매칭 변경</summary>
+
 Spring Boot 3.0부터는 `/users`와 `/users/`를 같은 경로로 자동 매칭하지 않는 방향으로 바뀌었다.  
 기존 API 호출이나 프론트엔드 코드에서 마지막 `/`가 섞여 들어오는 경우가 있다면 404가 발생할 수 있으므로, 주요 컨트롤러 URL을 실제 호출 기준으로 확인해야 한다.
 
@@ -505,7 +583,11 @@ public class WebConfig implements WebMvcConfigurer {
 다만 Spring Boot 3.0부터는 `setUseTrailingSlashMatch(true)`는 deprecated된 임시 호환 방식이다.  
 장기적으로는 `/users`, `/users/` 호출을 명시적으로 정리하는 편이 좋다.
 
-#### 4-1-2) Spring Security 설정 변경
+</details>
+
+<details class="topic-details" markdown="1">
+<summary>4-1-2) Spring Security 설정 변경</summary>
+
 Spring Boot 3.0부터는 `WebSecurityConfigurerAdapter` 기반 설정을 그대로 가져가기 어렵다.  
 `SecurityFilterChain` Bean을 등록하는 방식으로 바꾸고, `antMatchers`, `mvcMatchers` 대신 `requestMatchers` 기준으로 권한 설정을 정리해야 한다.
 또한 Spring Boot 3.0부터는 dispatcher type별 보안 필터 적용 방식도 달라질 수 있으므로, forward/error dispatch를 쓰는 예외 페이지나 내부 포워딩이 있다면 함께 확인해야 한다.
@@ -629,7 +711,11 @@ public class PageController {
 `FORWARD`를 전체 허용하면 내부 포워딩으로 접근되는 경로가 보안 규칙을 우회하는 것처럼 보일 수 있으므로, 필요한 경우에만 별도로 허용하는 편이 안전하다.  
 예외 페이지가 인증 실패로 다시 막히면 사용자는 원래 오류 대신 403이나 리다이렉트 루프를 볼 수 있으므로, 업그레이드 후에는 일부러 404, 500 상황을 만들어 `/error` 처리까지 확인하는 것이 좋다.
 
-#### 4-1-3) 설정 프로퍼티 변경  
+</details>
+
+<details class="topic-details" markdown="1">
+<summary>4-1-3) 설정 프로퍼티 변경</summary>
+
 Spring Boot 3.0부터는 2.x에서 deprecated 되었던 프로퍼티가 제거되거나 이름이 바뀐 경우가 있다.  
 `application.yml`을 그대로 두고 올렸을 때 property binding 실패가 나면, 임시로 `spring-boot-properties-migrator`를 추가해 어떤 설정을 바꿔야 하는지 확인할 수 있다.
 
@@ -663,7 +749,11 @@ Property source 'Config resource ... application.yml':
 단, `spring-boot-properties-migrator`는 운영에 계속 넣어두는 의존성이 아니라 마이그레이션 확인용이다.  
 프로퍼티를 수정하고 애플리케이션이 정상 기동되는 것을 확인했다면 반드시 제거해야 한다.
 
-#### 4-1-4) `RestTemplate`에서 Apache HttpClient를 사용하는 경우
+</details>
+
+<details class="topic-details" markdown="1">
+<summary>4-1-4) `RestTemplate`에서 Apache HttpClient를 사용하는 경우</summary>
+
 Spring Boot 3.0부터는 `RestTemplate`에서 Apache HttpClient 4 기반 설정을 그대로 사용하기 어렵고 HttpClient 5 계열을 사용해야 한다.  
 `HttpComponentsClientHttpRequestFactory`나 커스텀 `RestTemplateBuilder` 설정을 사용하고 있다면 관련 의존성과 생성 코드를 확인해야 한다.
 
@@ -725,7 +815,11 @@ RestTemplate restTemplate(RestTemplateBuilder builder) {
 따라서 업그레이드할 때는 `pom.xml`이나 `build.gradle`에 `org.apache.httpcomponents:httpclient` 같은 HttpClient 4 의존성이 남아 있는지 확인해야 한다.  
 그리고 코드에서 `org.apache.http.*` import를 사용하는 `RestTemplate` 설정이 있다면 `org.apache.hc.client5.*` 기반 코드로 바꿔야 한다.
 
-#### 4-1-5) Actuator endpoint 변경
+</details>
+
+<details class="topic-details" markdown="1">
+<summary>4-1-5) Actuator endpoint 변경</summary>
+
 Spring Boot 3.0부터 Actuator의 `httptrace` endpoint는 제거되고 `httpexchanges` endpoint로 대체되었다.  
 또한 `/env`, `/configprops` endpoint의 값 마스킹 정책도 달라졌다.  
 
@@ -779,9 +873,13 @@ management:
 값을 꼭 확인해야 하는 내부 환경이라면 `show-values` 설정을 조정할 수 있지만, 운영에서는 민감 정보 노출 위험이 있으므로 기본적으로는 열어두지 않는 것이 좋다.  
 결국 이 변경의 핵심은 Actuator endpoint URL만 바뀐 것이 아니라, endpoint를 노출하는 설정, 데이터를 쌓는 방식, 민감값을 보여주는 정책까지 함께 확인해야 한다는 점이다.
 
+</details>
+
 ### 4-2) Spring Boot 2.7
 
-#### 4-2-1) 직접 만든 starter나 자동 설정 등록 방식
+<details class="topic-details" markdown="1">
+<summary>4-2-1) 직접 만든 starter나 자동 설정 등록 방식</summary>
+
 Spring Boot 2.7부터 자동 설정 등록 방식으로 `META-INF/spring/org.springframework.boot.autoconfigure.AutoConfiguration.imports` 파일이 도입되었다.  
 Spring Boot 3.0부터는 `spring.factories`의 `EnableAutoConfiguration` 키만으로 자동 설정을 등록하는 방식이 제거되었으므로, 직접 만든 starter가 있다면 등록 파일을 확인해야 한다.
 
@@ -848,6 +946,8 @@ public class MyCommonAutoConfiguration {
 
 정리하면, Spring Boot 2.7을 중간 단계로 거쳐 간다면 `spring.factories`와 `AutoConfiguration.imports`를 같이 둬서 호환성을 확보할 수 있다.  
 최종적으로 Spring Boot 3.x로 올린 뒤에는 `AutoConfiguration.imports` 기준으로 자동 설정이 등록되는지 확인해야 한다.
+
+</details>
 
 ---
 참고 : https://twofootdog.tistory.com/348
